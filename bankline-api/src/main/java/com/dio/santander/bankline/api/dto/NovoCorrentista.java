@@ -15,5 +15,5 @@ public class NovoCorrentista {
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
-
+	
 }
