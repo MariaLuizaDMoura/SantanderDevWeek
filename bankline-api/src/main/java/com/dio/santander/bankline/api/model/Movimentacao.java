@@ -14,14 +14,14 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "tab_movimentacao")
 public class Movimentacao {
-	@Id //chave primaria, identificador do registro
-	@GeneratedValue(strategy = GenerationType.IDENTITY) //criar um achave unica para cada registro inserido
+	@Id // chave primaria, identificador do registro
+	@GeneratedValue(strategy = GenerationType.IDENTITY) // criar um achave unica para cada registro inserido
 	private Integer id;
 	@Column(name = "data_hora")
 	private LocalDateTime dataHora;
 	private String descricao;
 	private Double valor;
-	
+
 	@Enumerated(EnumType.STRING)
 	private MovimentacaoTipo tipo;
 
